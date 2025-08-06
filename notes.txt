@@ -66,4 +66,28 @@ do these changes in json file
 npm install express             do this in the integrated terminal again
 npm i -D nodemon                for not restarting the server again and again after making changes
 
-"dev": "nodemon index.js".  add this in the scripts
+"dev": "nodemon index.js".  add this in the script
+
+apple@Apples-Air 02_express % git init
+Reinitialized existing Git repository in /Users/apple/Desktop/webdev/backend_mongodb/02_express/.git/
+apple@Apples-Air 02_express % git add .
+apple@Apples-Air 02_express % git commit -m "added to github"
+[main 982ea92] added to github
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+apple@Apples-Air 02_express % git branch -M main
+apple@Apples-Air 02_express % git remote add origin https://github.com/dattatreya-05/express-digi.git
+error: remote origin already exists.
+apple@Apples-Air 02_express % git remote add origin https://github.com/dattatreya-05/express-digi.git
+error: remote origin already exists.
+apple@Apples-Air 02_express % git push -u origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 12.99 KiB | 4.33 MiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/dattatreya-05/express-digi.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+apple@Apples-Air 02_express %
