@@ -1,0 +1,69 @@
+open with integrated terminal in the folder(in this case 02_express)
+npm init
+
+
+then the following will automatically come..just put the things as asked
+
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (02_express) tea manager
+Sorry, name can only contain URL-friendly characters.
+package name: (02_express) tea-manager
+version: (1.0.0)
+description: a simple manager for different tea
+entry point: (index.js)
+test command:
+git repository:
+keywords: express,tea
+author: dattatreya chakraborty
+license: (ISC)
+About to write to /Users/apple/Desktop/webdev/backend_mongodb/02_express/package.json:
+
+{
+  "name": "tea-manager",
+  "version": "1.0.0",
+  "description": "a simple manager for different tea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "tea"
+  ],
+  "author": "dattatreya chakraborty",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+enter
+
+
+do these changes in json file
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+"scripts": {
+    "start": "node index.js"
+},
+
+"type": "module",//import..we are doing this
+"type": "commonjs",//require
+
+
+
+npm install express             do this in the integrated terminal again
+npm i -D nodemon                for not restarting the server again and again after making changes
+
+"dev": "nodemon index.js".  add this in the scripts
