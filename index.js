@@ -1,12 +1,12 @@
 // const express = require("express"); //commonjs
 
 //npm run start
-
+import 'dotenv/config';
 import express from "express";
 
 const app = express();//so we created an app which came from express
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // app.get("/",(req,res)=>{
 //     res.send("hello i am dattatreya from index.js");//it is like if req.url === "/" then send the following respond
